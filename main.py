@@ -29,6 +29,19 @@ def encontrar_numeros_mais_repetidos(listas, num_listas=3, num_numeros=6):
 
 # Lista fornecida com o número 2 na primeira linha
 listas_fornecidas = [
+    "06\n23\n35\n36\n37\n59\n",
+    "09\n18\n29\n37\n39\n58\n",
+    "06\n11\n26\n32\n46\n56\n",
+    "20\n44\n45\n46\n56\n59\n",
+    "09\n33\n39\n43\n50\n54\n",
+    "18\n28\n30\n39\n41\n58\n",
+    "08\n22\n34\n42\n51\n59\n",
+    "04\n17\n22\n28\n30\n49\n",
+    "02\n10\n29\n31\n56\n59\n",
+    "08\n13\n31\n33\n49\n50\n",
+    "09\n24\n34\n39\n45\n50\n",
+    "04\n08\n10\n27\n28\n32\n",
+    "02\n08\n11\n22\n48\n49\n",
     "09\n30\n34\n44\n54\n55\n",
     "01\n02\n10\n32\n34\n59\n",
     "05\n16\n38\n42\n43\n48\n",
@@ -48,8 +61,10 @@ listas_fornecidas = [
     "09\n19\n22\n24\n50\n60\n"
 ]
 
+
 numeros_mais_repetidos = encontrar_numeros_mais_repetidos(listas_fornecidas, num_listas=3, num_numeros=6)
 
 for i, numeros in enumerate(numeros_mais_repetidos, start=1):
     numeros_ordenados = sorted(numeros)
     print(f"Lista {i} - Números mais repetidos:", numeros)
+    
